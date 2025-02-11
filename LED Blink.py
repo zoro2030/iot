@@ -1,0 +1,46 @@
+import RPi.GPIO as GPIO
+import time
+GPIO.setwarnings(False)
+ledpin = 35
+GPIO.setmode(GPIO.BOARD)
+GPIO.setup(35, GPIO.OUT)
+GPIO.setup(3, GPIO.OUT)
+GPIO.setup(32, GPIO.OUT)
+GPIO.setup(5, GPIO.OUT)
+GPIO.setup(3, GPIO.OUT)
+GPIO.setup(16, GPIO.OUT)
+GPIO.setup(19, GPIO.OUT)
+GPIO.setup(21, GPIO.OUT)
+GPIO.setup(22, GPIO.OUT)
+GPIO.setup(23, GPIO.OUT)
+GPIO.setup(24, GPIO.OUT)
+GPIO.setup(18, GPIO.OUT)
+GPIO.setup(8, GPIO.OUT)
+GPIO.setup(10, GPIO.OUT)
+GPIO.setup(12, GPIO.OUT)
+GPIO.setup(33, GPIO.OUT)
+
+
+
+while 1:
+    GPIO.output(3, GPIO.HIGH)
+    GPIO.output(5, GPIO.HIGH)
+    GPIO.output(16, GPIO.HIGH)
+    GPIO.output(19, GPIO.HIGH)
+    GPIO.output(21, GPIO.HIGH)
+    GPIO.output(22, GPIO.HIGH)
+    GPIO.output(23, GPIO.HIGH)
+    GPIO.output(24, GPIO.HIGH)
+    GPIO.output(18, GPIO.HIGH)
+    GPIO.output(8, GPIO.HIGH)
+    GPIO.output(10, GPIO.HIGH)
+    GPIO.output(12, GPIO.HIGH)
+    GPIO.output(32, GPIO.HIGH)
+    GPIO.output(33, GPIO.HIGH)
+    GPIO.output(35, GPIO.HIGH)
+    
+    #print("ON")
+    #time.sleep(1)
+    #GPIO.output(ledpin, GPIO.LOW)
+    #print("OFF")
+    #time.sleep(1)
